@@ -1,0 +1,119 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+
+body
+{
+  background-color: #F0F4F7;
+  box-sizing: border-box;
+}
+nav
+{
+  background-color: #fff;
+  box-shadow: 0 0 10px 5px #DDD;
+  padding: 5px 0;
+}
+nav section
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav section figure img
+{
+  width: 180px;
+  padding-top: 15px
+}
+
+nav section .btndrop i
+{
+  color: #49A6E9;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all .5s;
+}
+nav section .btndrop i:hover
+{
+  transform: rotate(90deg);
+  color: #000
+}
+
+nav header ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s;
+}
+.dropH
+{
+  height: 180px;
+}
+nav header ul li a
+{
+  color: #6D4D67;
+  letter-spacing: 5px;
+  text-decoration: none !important;
+  font-size: 17px;
+  transition: all .5s;
+}
+
+nav header ul li
+{
+  padding: 10px 0;
+}
+nav header ul li:hover
+{
+  background-color: rgba(73,166,233 , .3);
+}
+nav header ul li:hover a
+{
+  padding-left: 20px;
+  color: blue;
+  opacity: .6;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  nav .btndrop
+  {
+    display: none;
+  }
+  nav header
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav header ul
+  {
+    height: auto;
+  }
+  nav header ul li
+  {
+    display: inline-block;
+    padding: 0;
+  }
+  nav header ul li:not(nav ul li:last-of-type)
+  {
+    margin-right: 10px
+  }
+  nav header ul li a
+  {
+    letter-spacing: 3px;
+  }
+
+  nav header ul li:hover
+  {
+    background-color: #fff;
+  }
+  nav header ul li:hover a
+  {
+    padding-left: 0;
+    color: #000;
+  }
+
+}
